@@ -1,0 +1,36 @@
+:root{
+  --base-font: sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-family: var(--base-font);
+
+}
+.container{
+  width: min(80ch, 100vw - 4rem);
+  margin-inline: auto;
+}
+
+.reigon{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@keyframes spin-animation{
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spin-in{
+  animation: spin-animation 1s linear infinite;
+}
+.spin-stop{
+  animation-play-state: paused;
+}
